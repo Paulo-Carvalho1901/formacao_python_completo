@@ -19,7 +19,7 @@ idade = input('Digite sua idade: ')
 if nome and idade:
     print(f'Seu nome é {nome} e sua idade {idade}')
     print(nome[::-1]) # invertendo a string
-    if ' ' in nome:
+    if ' ' in nome: # condição que verifica se nome tem espaço ou não
         print('Seu nome contém espaços')
     else:
         print('Seu nome não contém espaços.')
