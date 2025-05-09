@@ -29,6 +29,11 @@ while True:
         print('Operador inválido.')
         continue
 
+    # CROADP VALIDAÇÃO PARA QUANTIDADE DE OPERADORES DIGITADAS
+    if len(operador) > 1:
+        print('Digite apenas um operador.')
+        continue
+
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
     
     if sair is True:
