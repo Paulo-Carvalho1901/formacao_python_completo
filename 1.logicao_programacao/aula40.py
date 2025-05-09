@@ -8,6 +8,8 @@ while True:
 
     # CRIADO UMA BANDEIRA
     numeros_validos = None
+    num_1_float = 0
+    num_2_float = 0
 
     # CRIADO VALIDAÇÃO DOS NUMEROS
     try:
@@ -29,10 +31,24 @@ while True:
         print('Operador inválido.')
         continue
 
-    # CROADP VALIDAÇÃO PARA QUANTIDADE DE OPERADORES DIGITADAS
+    # CROADO VALIDAÇÃO PARA QUANTIDADE DE OPERADORES DIGITADAS
     if len(operador) > 1:
         print('Digite apenas um operador.')
         continue
+
+    # CRIADO AS OPERAÇÕES MATEMATICAS
+    print('Realizando sua conta, confira o resultado a abaixo')
+
+    if operador == '+':
+        print(f'{num_1_float}+{num_2_float}=', num_1_float + num_2_float)
+    elif operador == '-':
+        print(f'{num_1_float}-{num_2_float}=', num_1_float - num_2_float)
+    elif operador == '/':
+        print(f'{num_1_float}/{num_2_float}=', num_1_float / num_2_float)
+    elif operador == '*':
+        print(f'{num_1_float}*{num_2_float}=', num_1_float * num_2_float)
+    else:
+        print('Não deve chegar até aqui.')
 
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
     
