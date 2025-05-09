@@ -21,8 +21,13 @@ while True:
     if numeros_validos is None:
         print('Um ou ambos dos números digitados não são inválidos.')
         continue
+    
+    # CRIADO VALIDAÇÃO DOS OPERADORES SOLICITADOS
+    operadores_permitidos = '+-/*'
 
-
+    if operador not in operadores_permitidos:
+        print('Operador inválido.')
+        continue
 
     sair = input('Quer sair? [s]im: ').lower().startswith('s')
     
