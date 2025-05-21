@@ -17,7 +17,9 @@ while True:
 
     # criando estrutura de controle para as opções
     if opcao == 'i':
-        print('i')
+        os.system('clear')
+        valor = input('valor: ')
+        lista.append(valor)
     elif opcao == 'a':
         print('a')
     elif opcao == 'l':
