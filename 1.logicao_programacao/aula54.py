@@ -17,14 +17,14 @@ while True:
 
     # criando estrutura de controle para as opções
     if opcao == 'i':
-        os.system('clear')
+        os.system('cls')
         valor = input('valor: ')
         lista.append(valor)
     elif opcao == 'a':
         print('a')
     elif opcao == 'l':
         # limpando o terminal
-        os.system('clear')
+        os.system('cls')
         # verificando se alista está vazia
         if len(lista) == 0:
             print('Não há nada para lista')
