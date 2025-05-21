@@ -6,3 +6,9 @@ Não permita que o programa quebre com
 error de índices inexistentes na lista
 """
 
+lista = []
+
+while True:
+    print('Selecione uma opção:')
+    opcao = input('[i]nserir [a]pagar [l]istar: ')
+    
