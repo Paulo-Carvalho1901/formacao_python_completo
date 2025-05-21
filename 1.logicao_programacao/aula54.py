@@ -6,6 +6,8 @@ Não permita que o programa quebre com
 error de índices inexistentes na lista
 """
 
+import os
+
 lista = []
 
 while True:
@@ -19,7 +21,15 @@ while True:
     elif opcao == 'a':
         print('a')
     elif opcao == 'l':
-        print('l')
+        # limpando o terminal
+        os.system('clear')
+        # verificando se alista está vazia
+        if len(lista) == 0:
+            print('Não há nada para lista')
+
+        # Iterando na lista com o index usando unumerate
+        # caso tenha algo na lista
+        for i, valor in enumerate(lista):
+            print(i, valor)
     else:
-        print('Por favor digite uma opção válida. ')
-    
+        print('Por favor digite uma opção válida i, a ou l. ')
