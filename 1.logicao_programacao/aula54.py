@@ -21,7 +21,14 @@ while True:
         valor = input('valor: ')
         lista.append(valor)
     elif opcao == 'a':
-        print('a')
+        indice_str = input('Escolha um índice apagar: ')
+        try:
+            indice = int(indice_str)
+            del lista[indice]
+        except ValueError:
+            print('Por favor dgite apenas números inteiros.')
+        except IndexError:
+            print('Índice não existe na lista.')
     elif opcao == 'l':
         # limpando o terminal
         os.system('cls')
