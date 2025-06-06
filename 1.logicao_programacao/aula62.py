@@ -24,8 +24,8 @@ contrário disso:
 
 O segundo dígito do CPF é 0
 """
-cpf = '74682489070'
-nove_digitos = cpf[:9] # pegando apenas os 9 digtos
+cpf_enviado_usuario = '74682489070'
+nove_digitos = cpf_enviado_usuario[:9] # pegando apenas os 9 digtos
 conator_regressivo_1 = 10 # criado um contador
 
 resultado_digito_1 = 0 
@@ -45,3 +45,9 @@ for digito in dez_digito:
 digito_2 = (resultado_digito_2 * 10) % 11
 digito_2 = digito_2 if digito_2 <= 9 else 0
 
+cpf_gerado_pelo_calculo = f'{nove_digitos}{digito_1}{digito_2}'
+
+if cpf_enviado_usuario == cpf_gerado_pelo_calculo:
+    print(f'{cpf_enviado_usuario} é válido')
+else:
+    print('CPF inválido.')
